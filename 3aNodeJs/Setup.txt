@@ -1,0 +1,69 @@
+Download Node.js
+
+Step 1. Open Floder Path As Command Prompt
+    type CMD 
+Run Command
+
+E:\MY CAREER\BE\SIX SEMESTER\WAD\ASSI\3aNodeJs>npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (3anodejs)
+version: (1.0.0)
+description: This Is node Js Static website
+entry point: (index.js)
+test command:
+git repository:
+keywords:
+author: Tejas Kamble
+license: (ISC)
+About to write to E:\MY CAREER\BE\SIX SEMESTER\WAD\ASSI\3aNodeJs\package.json:
+
+{
+  "name": "3anodejs",
+  "version": "1.0.0",
+  "description": "This Is node Js Static website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tejas Kamble",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes)
+
+E:\MY CAREER\BE\SIX SEMESTER\WAD\ASSI\3aNodeJs>
+
+Step 2.
+create index.js
+
+Step 3.
+Run command
+
+E:\MY CAREER\BE\SIX SEMESTER\WAD\ASSI\3aNodeJs>npm install express --save
+
+added 64 packages, and audited 65 packages in 8s
+
+12 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+Step 4. Create Public Floder 
+            create index.html file and write your website code in this Floder
+
+Step 5. Run Code 
+
+E:\MY CAREER\BE\SIX SEMESTER\WAD\ASSI\3aNodeJs>node index.js
+Server is Started
+^C
+E:\MY CAREER\BE\SIX SEMESTER\WAD\ASSI\3aNodeJs>

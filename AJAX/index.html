@@ -1,0 +1,79 @@
+<!-- File Name: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>USER REGISTRATION FORM</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/bootstrap.min.css" />
+
+</head>
+
+<body>
+
+  <form id="studentForm">
+
+    <label>FIRST NAME</label>
+    <input type="text" id="firstName" class="form-control" required />
+
+    <label>LAST NAME</label>
+    <input type="text" id="lastName" class="form-control" required />
+
+    <button class="btn btn-primary btn-lg" id="btnAddStudent" type="button">
+      SUBMIT
+    </button>
+
+  </form>
+
+  <!-- <script src="./js/bootstrap.bundle.min.js"></script> -->
+  <!-- <script src="/jquery-1.11.1.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    // File Name: myscript.js
+    $(document).ready(function () {
+      // getData();
+
+      $("#btnAddStudent").click(function () {
+        //collect student data from student form
+        function getStudentData() {
+
+          let student = {
+            firstName: $("#firstName").val(),
+            lastName: $("#lastName").val(),
+
+          };
+          $("#studentForm")[0].reset();
+          return student;
+        }
+
+        //store student data to localStorage
+        function storeDataToLocalStorage() {
+          if (!localStorage.getItem("student")) {
+            localStorage.setItem("student", JSON.stringify(getStudentData()));
+          } else {
+            localStorage.removeItem("student");
+            localStorage.setItem("student", JSON.stringify(getStudentData()));
+          }
+        }
+        //send data to server with AJAX request
+        function sendData() {
+          let xhr = new XMLHttpRequest();
+          let data = JSON.stringify(getStudentData());
+          xhr.open("POST", "http://localhost:4000/storedata", true);
+          xhr.setRequestHeader("Content-Type", "application/json");
+          xhr.send(data);
+        }
+        //call storeDataToLocalStorage and sendData functions
+        storeDataToLocalStorage();
+        // sendData();
+        window.location.href = "display-data.html"
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>

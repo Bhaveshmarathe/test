@@ -1,0 +1,42 @@
+<!-- File Name: display-data.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/bootstrap.min.css" />
+
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+  <title>DISPLAY STUDENTS DATA</title>
+</head>
+
+<body>
+
+  <body>
+
+    <span id="firstName"></span></br>
+    <span id="lastName"></span>
+    <!-- <script src="/jquery-1.11.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      // File Name: display-data.js
+      $(document).ready(function () {
+        getData();
+      });
+
+      function getData() {
+        let localStorageData = localStorage.getItem("student");
+        let studentObj = JSON.parse(localStorageData);
+        console.log(studentObj);
+
+        $("#firstName").text("First Name- "+studentObj.firstName);
+        $("#lastName").text("Last Name- "+studentObj.lastName);
+
+      }
+    </script>
+
+  </body>
+
+</html>

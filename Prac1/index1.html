@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Admin Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS styles */
+    .sidebar {
+      background-color: #c6fadb;
+      color: #ff89fb;
+      height: 100vh;
+    }
+    .card {
+      background-color: aquamarine;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div style="background-color:rgb(218, 240, 128)">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3 sidebar">
+        <div class=" text-center " style="font-weight: bolder; font-size: larger;">KKWIEER</div>
+        <div >
+            <a href="#"class="list-group-item" style="font-weight: bolder;">Dashboard</a>
+            <a href="student2.html"class="list-group-item  " style="font-weight: bold;">Student</a>
+            <a href="teachers.html" class="list-group-item " style="font-weight: bold;">Teachers</a>
+            <a href="courses.html" class="list-group-item " style="font-weight: bold;">Courses</a>
+            <a href="#" class="list-group-item " style="font-weight: bold;">Settings</a>
+            <a href="#" class="list-group-item "  style="color: red;">Logout</a>
+        </div>
+      </div>
+      <!-- Content -->
+      <div class="col-md-9">
+        <h2 style="margin-top:20px" >Dashboard Overview</h2>
+        <div class="row">
+          <!-- Card 1: Students -->
+          <div class="col-md-4">
+            <div class="card" style="margin-top: 20px;">
+              <div >
+                <center> <h5 >STUDENTS</h5> </center>
+                <p style="padding:10px; font-size: 20px;" >50</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2: Teachers -->     
+          <div class="col-md-4">
+            <div class="card" style="margin-top: 10%;">
+              <div >
+               <center> <h5 >Total Teachers</h5> </center>
+                <p style="padding:10px; font-size: 20px;" >50</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3: Courses -->
+          <div class="col-md-4">
+            <div class="card"style="margin-top: 10%;" >
+              <div >
+                <center> <h5 >Total courses</h5> </center>
+                <p style="padding:10px; font-size: 20px;" >50</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <h3 class="fs-4 ">Recent login</h3>
+          <div>
+              <table class="table bg-white table-hover">
+                  <thead>
+                      <tr>
+                          <th>#</th>
+                          <th >NAME</th>
+                          <th >BRANCH</th>
+                          <th >PLAYLIST</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <th >1</th>
+                          <td>satish chate</td>
+                          <td>IT</td>
+                          <td>C++</td>
+                      </tr>
+                     
+                  </tbody>
+              </table>
+          </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

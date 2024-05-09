@@ -1,0 +1,41 @@
+Step 1. Download Docker  https://dockr.ly/38BQNLT
+Step 2. Download Node   
+Step 3. Create floder in any name But give name as Lowercase
+Step 4. Create file name "Dockerfile" 
+            and Example.js
+
+Step 5. Run this commands on Terminal
+PS E:\MY CAREER\BE\SIX SEMESTER\WAD\ASSI\2b> docker --version
+Docker version 26.0.0, build 2ae903e
+PS E:\MY CAREER\BE\SIX SEMESTER\WAD\ASSI\2b> node Tejas.js
+Hello Tejas Kamble
+Class TE-IT
+Docker
+Docker
+Docker
+PS E:\MY CAREER\BE\SIX SEMESTER\WAD\ASSI\2b> docker build -t 2b .
+[+] Building 0.0s (0/0)  docker:default
+[+] Building 3.2s (7/7) FINISHED                                                                             docker:default
+ => [internal] load build definition from Dockerfile                                                                   0.2s
+ => => transferring dockerfile: 88B                                                                                    0.0s 
+ => [internal] load metadata for docker.io/library/node:alpine                                                         2.2s
+ => [internal] load .dockerignore                                                                                      0.0s
+ => => transferring context: 2B                                                                                        0.0s 
+ => [internal] load build context                                                                                      0.1s 
+ => => transferring context: 5.08kB                                                                                    0.0s 
+ => CACHED [1/2] FROM docker.io/library/node:alpine@sha256:916b42f9e83466eb17d60a441a96f5cd57033bbfee6a80eae8e3249f34  0.0s 
+ => [2/2] COPY . /2b                                                                                                   0.1s
+ => exporting to image                                                                                                 0.2s
+ => => exporting layers                                                                                                0.1s
+ => => writing image sha256:fa67943462fc22808ca9cd324d554fb95a5ff88693f67069c8f07c7097287300                           0.0s 
+ => => naming to docker.io/library/2b                                                                                  0.0s 
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview
+PS E:\MY CAREER\BE\SIX SEMESTER\WAD\ASSI\2b> docker images
+REPOSITORY                 TAG       IMAGE ID       CREATED         SIZE
+2b                         latest    fa67943462fc   7 seconds ago   148MB
+partb                      latest    281aa30c499c   2 hours ago     148MB
+<none>                     <none>    b771a529a5f3   2 hours ago     148MB
+docker/welcome-to-docker   latest    c1f619b6477e   6 months ago    18.6MB
+PS E:\MY CAREER\BE\SIX SEMESTER\WAD\ASSI\2b> 
